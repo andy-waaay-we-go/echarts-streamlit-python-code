@@ -81,9 +81,9 @@ def render_anscombe_quartet():
         ('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'))
     st.write('You selected:', see_results_from_this_day)
     
-    see_results_until_this_day = st.selectbox(
+    see_results_until_this_day = st.select_slider(
         'Select the last day you want to see results from',
-        ('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'))
+        options=['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'])
     st.write('You selected:', see_results_until_this_day)
 
 
